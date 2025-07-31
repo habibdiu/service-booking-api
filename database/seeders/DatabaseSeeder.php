@@ -14,7 +14,7 @@ class UserSeeder extends Seeder
           'name' => 'Admin User',
           'email' => 'admin@gmail.com',
           'password' => bcrypt('123456'),
-          'is_admin' => true, // if you use this column for admin flag
+          'is_admin' => true,
         ]);
         Service::factory()->count(5)->create();
     }
